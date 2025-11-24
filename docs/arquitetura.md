@@ -1,33 +1,31 @@
 # Arquitetura do Sistema
 
-# Visão Geral
-A arquitetura será composta por:
-
-- Backend (Node.js / Python)
-- Banco de Dados SQL
-- Servidor dedicado 24/7
+## Visão Geral
+A arquitetura do sistema é composta por:
+- Backend (Node.js ou Python)
 - WhatsApp Business API
-- Webhook de recepção de mensagens
-- Integração com e-mail
-- ERP (futuro)
+- Servidor dedicado
+- Banco de Dados
+- Webhook
+- Integração com ERP (futuro)
 
-# Componentes Principais
+## Backend
+Responsável por:
+- Lógica do bot
+- Processamento de mensagens
+- Roteamento por setor e região
+- Bloqueio de duplicidade
+- Coleta de dados
 
-# Backend
-- lógica do bot  
-- roteamento  
-- análise contextual  
-- bloqueio de duplicidade  
-- envio de respostas  
+## Banco de Dados
+Armazena:
+- Clientes
+- Atendimentos
+- Histórico
+- Orçamentos
+- Logs
 
-# Banco de Dados
-- clientes  
-- atendimentos  
-- orçamentos  
-- histórico  
-- logs  
-
-# Integrações
-- WhatsApp (API Meta Oficial)  
-- E-mail via Outlook  
-- ERP (futuro)
+## Integrações
+- API Meta
+- E-mail
+- ERP
